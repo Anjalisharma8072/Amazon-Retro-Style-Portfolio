@@ -1,0 +1,526 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: Arial,sans-serif;
+    background-color: white;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace; 
+  font-size: 24px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.spinner {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loader p {
+  margin-top: 20px;
+  font-size: 18px;
+  text-align: center;
+}
+
+#content {
+  display: none;
+}
+
+.top-header {
+    padding: 40px 10%;
+    text-align: right;
+    color: #333;
+    font-weight: bold;
+}
+
+.header-container p {
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-container i {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.header-container a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 8px;
+}
+
+.header-container span {
+    margin: 0 8px;
+}
+
+.main-header {
+    color: white;
+    text-align: center;
+}
+
+.tab-menu {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 0 10px;
+}
+
+.tab {
+    padding: 10px 20px;
+    border-right: 1px solid #ddd;
+    color: #2c2222;
+    font-size: 14px;
+    background-color: #f3f3d7;
+    cursor: pointer;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-weight:lighter;
+    
+    
+}
+
+.welcome-tab {
+    background-color: #004f77;
+    color: #ffd700;;
+    font-weight:bolder;
+}
+
+.tab:last-child {
+    border-right: none;
+}
+
+.sub-menu {
+    background-color: #004f77; 
+    padding: 10px 0;
+}
+
+.sub-menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.sub-menu span {
+    color: #ccc;
+}
+
+#playButton {
+  font-size: 20px;
+  color: #ff6347; 
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+#playButton:hover {
+  color: #ff4500; 
+}
+
+#playButton i {
+  font-size: 24px;
+}
+
+.container {
+  display: flex;
+  justify-content: start; 
+  padding: 20px;
+}
+
+.left-sidebar {
+  width: 250px; 
+  padding: 15px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.search-section {
+  background-color:  #f8bf69;
+  border: 1px solid black;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px; 
+  margin-bottom: 15px;
+  position: relative;
+  padding: 0;
+}
+
+.sticky-heading {
+  background-color: #005f99;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  padding: 8px 0; 
+  margin: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px; 
+}
+
+#product-select,
+.search-input {
+  width: calc(100% - 20px); 
+  padding: 5px;
+  margin: 10px 10px 10px 10px; 
+  border: 1px solid #ccc;
+}
+
+.search-btn {
+  background-color: #d65504;
+  color: white;
+  border: none;
+  padding: 3px 1px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 10px; 
+
+}
+
+.browse-section {
+  padding: 0; 
+  border: 1px solid #005f99;;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  width: 210px;
+}
+
+.sticky-heading {
+  font-size: 18px; 
+  margin: 0; 
+  padding: 10px; 
+  text-align: left;
+  font-weight: bold;
+}
+
+.browse-list {
+  margin: 10px 0; 
+  padding-left: 30px;
+  font-size: 18px; 
+  font-weight: bold; 
+  list-style-type: disc;
+
+}
+.browse-section .browse{
+  color: blue;
+}
+
+.browse-list li {
+  margin-bottom: 12px; 
+  font-size: 18px;
+ 
+}
+
+.browse-list li::marker {
+  font-size: 20px; 
+  color: black; 
+}
+
+.browse-list .sub-details {
+  display: block;
+  font-size: 14px;
+  color:  rgb(7, 74, 116); 
+  margin-top: 5px;
+ 
+  font-weight: 100;
+}
+
+
+.contact-section{
+ padding: 0; 
+  border: 1px solid gray;
+  height: 500px;
+  width:210px;
+
+
+}
+.contact-section h3{
+ 
+ padding: 5px;
+}
+.contact-section a{
+  color: #005f99;
+  font-weight: 100;
+  font-size: 18px;
+}
+
+.email-list {
+  margin: 10px 0; 
+  padding-left: 30px; 
+  font-size: 18px; 
+  font-weight: bold; 
+  list-style-type: disc;
+}
+
+.email-list li{
+  margin-bottom: 12px; 
+  font-size: 18px;
+ 
+}
+
+.email-list li::marker{
+  font-size: 20px; 
+  color: black; 
+}
+
+.welcome-section {
+  position: absolute;
+  top: 200px;
+  margin-left: 20%;
+}
+
+.welcome-section p{
+    text-align: center;
+    font-weight: bold;
+    color: #f17223;
+}
+
+
+.info {
+  position: absolute;
+  top: 350px;
+  margin-left: 20%;
+  /* padding: 5px; */
+  display: flex;
+  flex-direction: column; 
+  gap: 10px;
+}
+
+.info a {
+  font-weight: bold;
+  color: blue;
+  margin: 0; 
+  padding: 0;
+  font-family:Silkscreen;
+  font-size: 20px;
+}
+
+.info h3 {
+  font-weight: bold;
+  color: #f17223;
+  margin: 0;
+  font-size: 25px;
+}
+
+.sections-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sections-info .links{
+  font-size: 18px;
+  font-weight: 100;
+ 
+}
+.sections-info img {
+  max-width: 150px; 
+  height: auto; 
+}
+
+.sections-info p {
+  font-size: 18px;
+  line-height: 1;
+padding: 0;
+  font-family:Silkscreen;
+  max-width: 600px; 
+  text-align: left;
+}
+
+.sections-info.reverse {
+  flex-direction: row-reverse; 
+}
+
+.Social-links {
+   border: 1px solid rgb(216, 216, 178);
+   width: 200px;
+   height: auto; 
+   padding: 10px;
+   position: absolute;
+   margin-left: 80%;
+   top: 1090px;
+  
+  
+}
+
+.Social-links h3{
+  position: absolute;
+  background-color: rgb(216, 216, 178);
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 5px;
+}
+
+.Social-links li {
+   display: inline-block;
+  
+   text-align: center; 
+}
+
+.Social-links img {
+   width: 80px; 
+   height: 80px; 
+   border-radius: 50%; 
+   padding-top: 20px;
+ 
+}
+.music-list-section {
+  width: 200px;
+  height: 300px; 
+  border: 1px solid rgb(216, 216, 178); 
+  position: absolute;
+  padding: 10px;
+  margin: 30px auto; 
+  overflow: hidden; 
+  margin-left: 80%;
+  top: 350px;
+  
+ 
+}
+
+.music-list-section h3 {
+  text-align: left;
+  margin-bottom: 10px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  background-color: rgb(216, 216, 178); 
+  padding: 10px;
+  left: 0;
+  z-index: 1; 
+}
+
+.music-list-container {
+  height: 200px; 
+  overflow-y: hidden; 
+}
+
+.music-list {
+  list-style: none; 
+  padding-left: 0;
+  margin: 0;
+  animation: scroll-list 20s linear infinite; 
+}
+
+.music-list a{
+  color:  #6000a0;
+}
+.music-list li {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ccc; 
+}
+
+.Hobbies {
+  border: 1px solid rgb(216, 216, 178); 
+  width: 200px; 
+  padding: 10px; 
+  margin: 30px auto; 
+  position: relative;
+  position: absolute;
+  margin-left: 80%;
+  top:660px
+}
+
+.hobbies-heading {
+  background-color:rgb(216, 216, 178); 
+  padding: 0; 
+  margin: 0; 
+  text-align: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  padding-left: 10px;
+  
+}
+
+.Hobbies h3 {
+  margin: 0; 
+  padding-left: 5px;
+  padding: 5px 0; 
+}
+
+.Hobbies ol {
+  list-style-type: disc; 
+  padding-left: 20px;
+  margin: 40px 0 0 0; 
+}
+
+.Hobbies li {
+  margin-bottom: 8px; 
+  text-align: left;
+}
+
+.Hobbies a {
+  color: #007bff; 
+  font-weight: bold; 
+}
+
+.Hobbies .description{
+   font-family: "Roboto Mono", monospace;
+  
+}
+
+.footer {
+ 
+  color:black;
+  text-align: center; 
+  padding: 10px 0; 
+  font-size: 14px; 
+  border-top: 2px solid #444; 
+  height: 100px;
+  width: 100%; 
+  bottom: 0; 
+}
+
+.footer a{
+  font-size: 30px;
+  font-family: Silkscreen;
+  color: #6000a0;
+}
+.footer p{
+  margin-top: 20px;
+}
+
+@keyframes scroll-list {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%); 
+  }
+}
+

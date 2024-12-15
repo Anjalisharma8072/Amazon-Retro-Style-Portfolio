@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>anjali.com</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+  <script src="./js/main.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+</head>
+
+<body>
+  <div id="loader" class="loader">
+    <div class="spinner"></div>
+  </div>
+  <header class="top-header">
+    <div class="header-container">
+      <p>
+        <i class="fas fa-shopping-cart"></i> | <span>ANJALI</span> |
+        <a href="#" id="playButton">
+          <i class="fas fa-play-circle"></i> Play Music
+        </a>
+      </p>
+    </div>
+  </header>
+  <audio id="audioPlayer" src="./music/comedian-117016.mp3" preload="auto"></audio>
+  <header class="main-header">
+    <nav class="tab-menu">
+      <div class="tab welcome-tab">WELCOME</div>
+      <div class="tab">ABOUT</div>
+      <div class="tab">SKILLS</div>
+      <div class="tab">PROJECTS</div>
+      <div class="tab">EXPEREINCE</div>
+      <div class="tab">ACHIEVEMENTS</div>
+    </nav>
+    <div class="sub-menu">
+      <a href="#">FULL</a>
+      <span>|</span>
+      <a href="#">STACK</a>
+      <span>|</span>
+      <a href="#">DEVELOPER</a>
+    </div>
+  </header>
+  <div class="container">
+    <aside class="left-sidebar">
+      <div class="search-section">
+        <h3 class="sticky-heading">SEARCH</h3>
+        <select id="product-select">
+          <option value="all">Anjali</option>
+        </select>
+
+        <button class="search-btn" id="go-button">Go!</button>
+      </div>
+      <div class="browse-section">
+        <h3 class="sticky-heading">BROWSE</h3>
+        <ul class="browse-list">
+          <li>
+            <a href="#" class="browse">About</a>
+            <a class="sub-details" href="#">Full Stack Developer, Love for code, Traveller</a>
+          </li>
+          <li>
+            <a href="#" class="browse">Skills</a>
+            <a class="sub-details" href="#">React, Node.js, JavaScript, Python, C++, MongoDB, PostgreSQL,
+              REST APIs</a>
+          </li>
+          <li>
+            <a href="#" class="browse">Projects</a>
+            <a class="sub-details" href="https://github.com/Anjalisharma8072/Bid-and-Buy" style="color: #6000a0;">Online
+              Auction System <a class="sub-details" href="https://github.com/Anjalisharma8072/course-recommender-system"
+                style="color: #6000a0;"> Course
+                Recommender System <a> <a
+                    href="https://drive.google.com/file/d/1cefK1a4iXEdX4os3Mnsqg1ajf0bZycZk/view?usp=drive_link"
+                    class="sub-details" style="color: #6000a0;">Smart Blind
+                    Stick</a>
+          </li>
+          <li>
+            <a href="#" class="browse">Experience</a>
+            <a class="sub-details" href="#contact">Backend Developer, Open Source Contributor</a>
+          </li>
+          <li>
+            <a href="#" class="browse">Achievements</a>
+            <a class="sub-details" style="color: #6000a0;"
+              href="https://www.credential.net/a7d65c05-974f-4b21-820c-8e1a799b64a6">Codédex Summer Hackathon Winner</a>
+            <a class="sub-details" style="color: #6000a0;"
+              href="https://amazonsmbhav2024.hackerearth.com/challenges/hackathon/smbhav2024/dashboard/beb1a92/idea/">Idea
+              Shortlisted in Amazon SMBhav Hackathon</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="contact-section" id="contact">
+        <h3>Location</h3>
+        <ul class="email-list">
+          <li><a href="https://en.wikipedia.org/wiki/Agra" style="color: #6000a0;">Agra,Uttar Pradesh,India</a></li>
+        </ul>
+        <h3>Contact</h3>
+        <ul class="email-list">
+          <li><a href="mailto:anjaliiisharma007@gmail.com" style="color: #6000a0;">email</a></li>
+        </ul>
+        <h3>Key Points</h3>
+        <ul class="email-list">
+          <li>
+            <a style="font-size: 15px ;color: #005f99;font-weight: 100;" href="#">In my experience, I have worked as a
+              Backend Developer,
+              specializing in building REST APIs and working extensively with
+              MongoDB.</a>
+          </li>
+          <li>
+            <a href="#contact" style="font-size: 15px  ;color: #005f99;font-weight: 100;">As an open-source contributor,
+              I contributed to Codédex
+              repositories, helping millions of students improve and refine
+              their code.</a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+  <div class="welcome-section">
+    <img width="300px" height="110px" src="./images/logo-image.png" alt="Logo" class="logo-image" />
+    <p class="welcome-text">
+      Hello! want to know about me? Then explore this website
+    </p>
+  </div>
+  <div class="info">
+    <a href="#">In About</a>
+    <h3>About Me</h3>
+    <div class="sections-info">
+      <img src="./images/my-image.png" />
+      <p>
+        I’m Anjali Sharma, a passionate
+        <a href="#" class="links">full-stack developer</a> who thrives on solving complex
+        challenges with code. From crafting seamless backend systems to
+        bringing ideas to life on the web, I’m fueled by curiosity and a love
+        for innovation. Beyond coding, I enjoy exploring new horizons, both in
+        technology and the world around me. Let’s build something incredible
+        together!
+      </p>
+    </div>
+
+    <a href="#">In Skills</a>
+    <h3>Technology Stack</h3>
+    <div class="sections-info">
+      <img height="100px" width="100px" src="./images/python.jpg" />
+      <p>
+        When it comes to my technology skills, I’m well-versed in multiple
+        programming languages and frameworks like <a href="#" class="links">Node.js</a>,
+        <a href="#" class="links">React</a> and <a href="#" class="links">Mongodb</a> and I’m constantly
+        honing and expanding my expertise every day.
+      </p>
+    </div>
+    <a href="#">In Projects</a>
+    <h3>Development Showcase</h3>
+    <div class="sections-info reverse">
+      <img src="./images/screen.jpg" />
+      <p>
+        I have built three projects: two <a href="#" class="links">software-based</a> and
+        one hardware-focused, enhancing my full-stack development skills.
+      </p>
+    </div>
+    <a href="#">In Experience</a>
+    <h3>Professional Journey</h3>
+    <div class="sections-info">
+      <img src="./images/computer.png" />
+      <p>
+        I completed an internship as a backend developer on a startup-based
+        project, gaining hands-on experience in backend technologies and<a href="#" class="links">
+          API</a>
+        development.
+      </p>
+    </div>
+    <a href="#" class="links">In Achievements</a>
+    <h3>Milestones & Achievements</h3>
+    <div class="sections-info reverse">
+      <img width="500px" height="500px" src="./images/achievement.jpg" />
+      <p>
+        I have won a <a href="#" class="links">hackathon</a>, showcasing my skills and
+        creativity. Additionally, my idea was shortlisted in the
+        <a href="#" class="links">Amazon SMBhav</a> Hackathon 2024, recognizing my
+        innovative thinking.
+      </p>
+    </div>
+  </div>
+
+  <div class="music-list-section">
+    <h3>My 90s Music Hits</h3>
+    <div class="music-list-container">
+      <ul class="music-list">
+        <li><a href="https://gaana.com/song/ramayan-21">Ramayan</a></li>
+        <li>
+          <a href="https://gaana.com/song/kuchh-na-kaho">Kuchh Na Kaho</a>
+        </li>
+        <li>
+          <a href="https://gaana.com/song/my-own-worst-enemy-141">My Own Worst Enemy</a>
+        </li>
+        <li>
+          <a href="https://gaana.com/song/aankhon-ki-gustakhiyan-maaf-ho">Chand Chhupa Badal Mein</a>
+        </li>
+
+        <li>
+          <a href="https://gaana.com/song/o-o-jaane-jaana">O O Jaane Jaana</a>
+        </li>
+        <li>
+          <a href="https://gaana.com/song/kisi-ki-muskurahaton-pe-ho-nisar-slap-house-mix">Kisi Ki Muskurahaton Pe Ho
+            Nisar</a>
+        </li>
+        <li>
+          <a href="https://gaana.com/song/baby-one-more-time">...Baby One More Time</a>
+        </li>
+        <li>
+          <a href="https://gaana.com/song/uden-jab-jab-zulfen-teri">Uden Jab Jab Zulfen Teri
+          </a>
+        </li>
+        <li>
+          <a href="https://gaana.com/song/lakdi-ki-kathi">Lakdi Ki Kathi</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div>
+
+    <div class="Hobbies">
+      <div class="hobbies-heading">
+        <h3>Hobbies</h3>
+      </div>
+      <ol>
+        <li>
+          <a href="#">Dance</a>
+          <span class="description"> - Whenever feeling stressed, just dance it out!</span>
+        </li>
+        <li>
+          <a href="#">Listening Music</a>
+          <span class="description"> - To calm mind, simply listen songs.</span>
+        </li>
+        <li>
+          <a href="#">Art</a>
+          <span class="description"> - When words fail, draw.</span>
+        </li>
+        <li>
+          <a href="#">Travelling</a>
+          <span class="description"> - Discover yourself by going on a trip.</span>
+        </li>
+      </ol>
+    </div>
+
+
+    <div class="Social-links">
+      <h3>Connect with Me</h3>
+
+      <li>
+        <a href="https://www.codedex.io/@anjaliiish10844">
+          <img src="./images/codedex-logo.png" alt="Codédex Logo" class="logo" />
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/anjali-sharma-322b27257/">
+          <img src="./images/linkdln.png" alt="LinkedIn Logo" class="logo" />
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/anjalisharma00719/">
+          <img src="./images/instagram.jpg" alt="Instagram Logo" class="logo" />
+        </a>
+      </li>
+      <li>
+        <a href="https://x.com/anjali_sharma79">
+          <img src="./images/twitter.jpg" alt="twitter Logo" class="logo" />
+        </a>
+      </li>
+    </div>
+    <footer class="footer">
+      <a href="index.html">anjali.com</a>
+      <p>@anjali-retro-portfolio</p>
+    </footer>
+
+</body>
+
+</html>
